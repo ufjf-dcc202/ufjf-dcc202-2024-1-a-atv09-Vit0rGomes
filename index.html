@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCC202 - Atividade 9: Vitor Gomes</title>
+  </head>
+  <body>
+    <main>
+      <h1>DCC202 - Atividade 9: Vitor Gomes</h1>
+      <p>
+        Esta é a página principal tem código JavaScript nela. Você só verá o
+        resultado no console e durante a depuração.
+      </p>
+    </main>
+
+    <script>
+
+        let maria = {
+            nome: "Maria",
+            qnt: 1,
+            comer: function () {
+                maria.qnt--;
+            }
+        };
+        let joao = {
+            nome: "João",
+            qtd: 2,
+        };
+
+        function deJparaM() {
+            maria.qnt = maria.qnt + joao.qnt;
+            joao.qnt = 0;
+        }
+
+        function deMparaJ() {
+            joao.qnt = joao.qnt + maria.qnt;
+            maria.qnt = 0;
+        }
+
+        console.log("Maria tinha ", maria.qnt, " maça(s)");
+        maria.comer();
+        console.log("Maria comeu uma, agora tem ", maria.qnt, "maças");
+
+    </script>
+  </body>
+</html>
